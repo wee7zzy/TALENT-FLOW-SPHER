@@ -43,5 +43,5 @@ CREATE TABLE offer_status (
     status ENUM('pending', 'accepted', 'rejected') DEFAULT 'pending',
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     FOREIGN KEY (job_id) REFERENCES job_offers(id) ON DELETE CASCADE,
-    FOREIGN KEY (candidate_id) REFERENCES candidates(id) ON DELETE CASCADE
+     FOREIGN KEY (candidate_id) REFERENCES candidates(id) ON DELETE CASCADE
 );
