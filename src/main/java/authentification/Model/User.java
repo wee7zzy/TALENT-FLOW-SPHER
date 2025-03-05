@@ -4,8 +4,6 @@ import java.time.LocalDateTime;
 
 public class User {
 
-    // Base User Class
-    public class user {
         private int id;
         private String name;
         private String email;
@@ -17,8 +15,8 @@ public class User {
             CANDIDATE, RECRUITER
         }
 
-        // Constructor
-        public user(String name, String email, String password, UserRole role) {
+
+        public User(String name, String email, String password, UserRole role) {
             this.name = name;
             this.email = email;
             this.password = password;
@@ -26,7 +24,10 @@ public class User {
             this.createdAt = LocalDateTime.now();
         }
 
-        // Getters and Setters
+        public User(){
+        }
+
+            //Getter and Setter
         public int getId() {
             return id;
         }
@@ -70,5 +71,4 @@ public class User {
         public LocalDateTime getCreatedAt() {
             return createdAt;
         }
-    }
 }
