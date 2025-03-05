@@ -4,71 +4,71 @@ import java.time.LocalDateTime;
 
 public class User {
 
-    // Base User Class
-    public class user {
-        private int id;
-        private String name;
-        private String email;
-        private String password;
-        private UserRole role;
-        private LocalDateTime createdAt;
+    private int id;
+    private String name;
+    private String email;
+    private String password;
+    private UserRole role;
+    private LocalDateTime createdAt;
 
-        public enum UserRole {
-            CANDIDATE, RECRUITER
-        }
+    public enum UserRole {
+        CANDIDATE, RECRUITER
+    }
 
-        // Constructor
-        public user(String name, String email, String password, UserRole role) {
-            this.name = name;
-            this.email = email;
-            this.password = password;
-            this.role = role;
-            this.createdAt = LocalDateTime.now();
-        }
 
-        // Getters and Setters
-        public int getId() {
-            return id;
-        }
+    public User(int id,String name, String email, String password, UserRole role) {
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.role = role;
+        this.createdAt = LocalDateTime.now();
+    }
 
-        public void setId(int id) {
-            this.id = id;
-        }
+    public User(){
+    }
 
-        public String getName() {
-            return name;
-        }
+    //Getter and Setter
+    public int getId() {
+        return id;
+    }
 
-        public void setName(String name) {
-            this.name = name;
-        }
+    public void setId(int id) {
+        this.id = id;
+    }
 
-        public String getEmail() {
-            return email;
-        }
+    public String getName() {
+        return name;
+    }
 
-        public void setEmail(String email) {
-            this.email = email;
-        }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-        public String getPassword() {
-            return password;
-        }
+    public String getEmail() {
+        return email;
+    }
 
-        public void setPassword(String password) {
-            this.password = password;
-        }
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
-        public UserRole getRole() {
-            return role;
-        }
+    public String getPassword() {
+        return password;
+    }
 
-        public void setRole(UserRole role) {
-            this.role = role;
-        }
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
-        public LocalDateTime getCreatedAt() {
-            return createdAt;
-        }
+    public UserRole getRole() {
+        return role;
+    }
+
+    public void setRole(UserRole role) {
+        this.role = role;
+    }
+
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
     }
 }
