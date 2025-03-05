@@ -1,10 +1,8 @@
 package OffreEmploi.Model;
 
-import Recruteur.MODEL.Recruteurs;
-
 import java.time.LocalDateTime;
 
-public class OffreEmploiModel {
+public class OffreEmploi {
 
         private int id;
         private String title;
@@ -12,7 +10,7 @@ public class OffreEmploiModel {
         private Recruteurs recruteurs;
         private LocalDateTime createdAt;
 
-        public OffreEmploiModel(String title, String description, Recruteurs recruteurs ) {
+        public OffreEmploi(String title, String description, Recruteurs recruteurs ) {
             this.title = title;
             this.description = description;
             this.recruteurs =recruteurs ;
@@ -29,4 +27,5 @@ public class OffreEmploiModel {
         public Recruteurs getRecruiter() { return recruteurs; }
         public void setRecruiter(Recruteurs recruiter) { this.recruteurs = recruiter; }
         public LocalDateTime getCreatedAt() { return createdAt; }
+
     }
