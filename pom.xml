@@ -1,12 +1,40 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<<<<<<< HEAD
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.example</groupId>
+=======
+<<<<<<< HEAD
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.example</groupId>
+<<<<<<< HEAD
+>>>>>>> 1dfc84ec86b789d5bf78196198af8e15065f0bc3
     <artifactId>TALENT_SPHER_FLOW</artifactId>
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
     <name>TALENT_SPHER_FLOW Maven Webapp</name>
     <url>http://maven.apache.org/</url>
+<<<<<<< HEAD
+=======
+=======
+    <artifactId>DoctoRV2</artifactId>
+    <packaging>war</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <name>DoctoRV2 Maven Webapp</name>
+    <url>http://maven.apache.org</url>
+>>>>>>> aa0697964350363d02915e02030451fc91e0508a
+=======
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.example</groupId>
+  <artifactId>TALENT_SPHER_FLOW</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>TALENT_SPHER_FLOW Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+>>>>>>> ab954ca780de2b931d287c7c5910a9b9ebcab21d
+>>>>>>> 1dfc84ec86b789d5bf78196198af8e15065f0bc3
     <dependencies>
         <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
         <dependency>
@@ -33,7 +61,13 @@
         </dependency>
 
     </dependencies>
+<<<<<<< HEAD
     <build>
+=======
+<<<<<<< HEAD
+    <build>
+<<<<<<< HEAD
+>>>>>>> 1dfc84ec86b789d5bf78196198af8e15065f0bc3
         <finalName>TALENT_SPHER_FLOW</finalName>
         <plugins>
             <plugin>
@@ -46,4 +80,28 @@
             </plugin>
         </plugins>
     </build>
+<<<<<<< HEAD
 </project>
+=======
+</project>
+=======
+        <finalName>DoctoRV2</finalName>
+    </build>
+=======
+  <build>
+    <finalName>TALENT_SPHER_FLOW</finalName>
+      <plugins>
+          <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-compiler-plugin</artifactId>
+              <configuration>
+                  <source>16</source>
+                  <target>16</target>
+              </configuration>
+          </plugin>
+      </plugins>
+  </build>
+>>>>>>> ab954ca780de2b931d287c7c5910a9b9ebcab21d
+</project>
+>>>>>>> aa0697964350363d02915e02030451fc91e0508a
+>>>>>>> 1dfc84ec86b789d5bf78196198af8e15065f0bc3
