@@ -1,13 +1,13 @@
 package authentification.Model;
 
-public class candidat extends User {
+public class Candidat extends User {
 
     private int id;
     private String name;
     private String phone;
 
-    public candidat(int id,String name, String email, String password, UserRole role) {
-        super(id,name,email,password,role);
+    public Candidat(int id, String name, String email, String password, UserRole role) {
+        super(name,email,password,role);
     }
 
     public String getPhone() {
