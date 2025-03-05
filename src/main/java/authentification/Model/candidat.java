@@ -16,5 +16,4 @@ public class Candidat extends User {
     public void setPhone(String phone) {
         this.phone = phone;
     }
-
 }
