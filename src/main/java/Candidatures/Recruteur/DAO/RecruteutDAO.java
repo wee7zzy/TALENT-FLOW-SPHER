@@ -1,7 +1,7 @@
 package Candidatures.Recruteur.DAO;
 
 import Candidatures.Recruteur.Model.RecruteurModel;
-import Utils.DBConnection;
+import Utils.DBconnection;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +12,7 @@ public class RecruteutDAO {
     public void ajouterRecruteur(RecruteurModel recruteur) {
         String sql = "INSERT INTO recruteurs (nom, email, motDePasse, entreprise) VALUES (?, ?, ?, ?)";
 
-        try (Connection con = DBConnection.getConnection();
+        try (Connection con = DBconnection.getConnection();
              PreparedStatement ps = con.prepareStatement(sql)) {
 
             ps.setString(1, recruteur.getNom());
@@ -31,7 +31,7 @@ public class RecruteutDAO {
         String sql = "SELECT * FROM recruteurs WHERE email = ?";
         RecruteurModel recruteur = null;
 
-        try (Connection con = DBConnection.getConnection();
+        try (Connection con = DBconnection.getConnection();
              PreparedStatement ps = con.prepareStatement(sql)) {
 
             ps.setString(1, email);
@@ -57,7 +57,7 @@ public class RecruteutDAO {
         String sql = "SELECT * FROM recruteurs";
         List<RecruteurModel> recruteurs = new ArrayList<>();
 
-        try (Connection con = DBConnection.getConnection();
+        try (Connection con = DBconnection.getConnection();
              Statement stmt = con.createStatement();
              ResultSet rs = stmt.executeQuery(sql)) {
 
