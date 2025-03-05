@@ -13,7 +13,8 @@ import java.io.IOException;
 public class RecruteurServlet extends HttpServlet {
     private RecruteutDAO recruteurDAO = new RecruteutDAO();
 
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
         String nom = request.getParameter("nom");
         String email = request.getParameter("email");
         String motDePasse = request.getParameter("motDePasse");
